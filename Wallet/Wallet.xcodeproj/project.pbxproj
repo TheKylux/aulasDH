@@ -16,6 +16,7 @@
 		AB30C7DF268E87510066E68E /* Cards.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB30C7DE268E87510066E68E /* Cards.swift */; };
 		AB30C7E3268E89390066E68E /* CardsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB30C7E1268E89390066E68E /* CardsTableViewCell.swift */; };
 		AB30C7E4268E89390066E68E /* CardsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB30C7E2268E89390066E68E /* CardsTableViewCell.xib */; };
+		AB30C7E6268E986E0066E68E /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB30C7E5268E986E0066E68E /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		AB30C7DE268E87510066E68E /* Cards.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cards.swift; sourceTree = "<group>"; };
 		AB30C7E1268E89390066E68E /* CardsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsTableViewCell.swift; sourceTree = "<group>"; };
 		AB30C7E2268E89390066E68E /* CardsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CardsTableViewCell.xib; sourceTree = "<group>"; };
+		AB30C7E5268E986E0066E68E /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,10 +64,10 @@
 		AB30C7C9268E86670066E68E /* Wallet */ = {
 			isa = PBXGroup;
 			children = (
+				AB30C7E8268E9AD90066E68E /* ViewController */,
 				AB30C7E0268E891A0066E68E /* Models */,
 				AB30C7CA268E86670066E68E /* AppDelegate.swift */,
 				AB30C7CC268E86670066E68E /* SceneDelegate.swift */,
-				AB30C7CE268E86670066E68E /* ViewController.swift */,
 				AB30C7D0268E86670066E68E /* Main.storyboard */,
 				AB30C7DE268E87510066E68E /* Cards.swift */,
 				AB30C7D3268E866B0066E68E /* Assets.xcassets */,
@@ -82,6 +84,15 @@
 				AB30C7E2268E89390066E68E /* CardsTableViewCell.xib */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		AB30C7E8268E9AD90066E68E /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				AB30C7CE268E86670066E68E /* ViewController.swift */,
+				AB30C7E5268E986E0066E68E /* DetailViewController.swift */,
+			);
+			path = ViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -158,6 +169,7 @@
 				AB30C7CF268E86670066E68E /* ViewController.swift in Sources */,
 				AB30C7E3268E89390066E68E /* CardsTableViewCell.swift in Sources */,
 				AB30C7DF268E87510066E68E /* Cards.swift in Sources */,
+				AB30C7E6268E986E0066E68E /* DetailViewController.swift in Sources */,
 				AB30C7CB268E86670066E68E /* AppDelegate.swift in Sources */,
 				AB30C7CD268E86670066E68E /* SceneDelegate.swift in Sources */,
 			);

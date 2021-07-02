@@ -35,7 +35,7 @@ class ViewController: UIViewController {
     }
 }
 
-//MARK:-
+//MARK:- UITableViewDelegate, UITableViewDataSource
 
 extension ViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -54,13 +54,14 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
         
         let selectedCard:Cards = self.arrayCards[indexPath.row];
         
-        //performSegue
+        performSegue(withIdentifier: "DetailViewController", sender: selectedCard);
         
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
-        //Segue
+        let vc:DetailViewController? = segue.destination as? DetailViewController;
+        vc?.selectedCard = sender as? Cards;
         
     }
     

@@ -8,7 +8,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Wallet-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Wallet" customModuleProvider="target" sceneMemberID="viewController">
@@ -30,14 +30,110 @@
                             <constraint firstItem="btp-Gy-nG4" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="oV8-hx-8Kc"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="3Nw-B8-9po"/>
+                    <navigationItem key="navigationItem" title="Wallet" id="3Nw-B8-9po">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="JSJ-cN-bIa"/>
+                    </navigationItem>
                     <connections>
                         <outlet property="myTableView" destination="btp-Gy-nG4" id="0j5-6Q-gu3"/>
+                        <segue destination="DMn-me-K27" kind="show" identifier="DetailViewController" id="lzc-xS-IMa"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1047.8260869565217" y="88.392857142857139"/>
+            <point key="canvasLocation" x="932" y="88"/>
+        </scene>
+        <!--Card-->
+        <scene sceneID="b8X-dE-dov">
+            <objects>
+                <viewController id="DMn-me-K27" customClass="DetailViewController" customModule="Wallet" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="7Xx-t3-c6g">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fundo-master" translatesAutoresizingMaskIntoConstraints="NO" id="VGR-Ft-X3d">
+                                <rect key="frame" x="38" y="137" width="338" height="216"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="216" id="oUC-uk-ces"/>
+                                    <constraint firstAttribute="width" constant="338" id="tkf-t7-Bli"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mastercard" translatesAutoresizingMaskIntoConstraints="NO" id="WN2-MA-4C4">
+                                <rect key="frame" x="250" y="268" width="119" height="76"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="119" id="fyP-kB-X8d"/>
+                                    <constraint firstAttribute="height" constant="76" id="nif-eG-nnB"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nome:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QF5-MJ-9BR">
+                                <rect key="frame" x="38" y="399" width="50.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Flh-S0-vTX">
+                                <rect key="frame" x="38" y="430" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Número do cartão:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V0u-js-Yuj">
+                                <rect key="frame" x="38" y="486" width="143" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="062-lY-m20">
+                                <rect key="frame" x="38" y="517" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Vencimento:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sij-Uk-Pzm">
+                                <rect key="frame" x="38" y="573" width="95" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tI9-w4-qsN">
+                                <rect key="frame" x="38" y="604" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="l31-5g-1Sw"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="QF5-MJ-9BR" firstAttribute="top" secondItem="VGR-Ft-X3d" secondAttribute="bottom" constant="46" id="03X-Il-8dy"/>
+                            <constraint firstItem="062-lY-m20" firstAttribute="leading" secondItem="l31-5g-1Sw" secondAttribute="leading" constant="38" id="2c4-4O-t7e"/>
+                            <constraint firstItem="062-lY-m20" firstAttribute="top" secondItem="V0u-js-Yuj" secondAttribute="bottom" constant="10" id="2hZ-y6-BiY"/>
+                            <constraint firstItem="VGR-Ft-X3d" firstAttribute="centerX" secondItem="7Xx-t3-c6g" secondAttribute="centerX" id="9DY-eF-1O0"/>
+                            <constraint firstItem="QF5-MJ-9BR" firstAttribute="leading" secondItem="l31-5g-1Sw" secondAttribute="leading" constant="38" id="Moc-QD-JhD"/>
+                            <constraint firstItem="sij-Uk-Pzm" firstAttribute="top" secondItem="062-lY-m20" secondAttribute="bottom" constant="35" id="Mp7-Fz-5sc"/>
+                            <constraint firstItem="Flh-S0-vTX" firstAttribute="top" secondItem="QF5-MJ-9BR" secondAttribute="bottom" constant="10" id="T8r-B6-QFK"/>
+                            <constraint firstItem="V0u-js-Yuj" firstAttribute="leading" secondItem="l31-5g-1Sw" secondAttribute="leading" constant="38" id="VJE-6d-Bhn"/>
+                            <constraint firstItem="VGR-Ft-X3d" firstAttribute="top" secondItem="l31-5g-1Sw" secondAttribute="top" constant="49" id="dvk-Jd-5kh"/>
+                            <constraint firstItem="V0u-js-Yuj" firstAttribute="top" secondItem="Flh-S0-vTX" secondAttribute="bottom" constant="35" id="gpX-GU-meh"/>
+                            <constraint firstItem="Flh-S0-vTX" firstAttribute="leading" secondItem="l31-5g-1Sw" secondAttribute="leading" constant="38" id="i1q-fY-uEi"/>
+                            <constraint firstItem="l31-5g-1Sw" firstAttribute="trailing" secondItem="WN2-MA-4C4" secondAttribute="trailing" constant="45" id="rVB-3M-ONe"/>
+                            <constraint firstItem="tI9-w4-qsN" firstAttribute="top" secondItem="sij-Uk-Pzm" secondAttribute="bottom" constant="10" id="s13-WR-V9n"/>
+                            <constraint firstItem="tI9-w4-qsN" firstAttribute="leading" secondItem="l31-5g-1Sw" secondAttribute="leading" constant="38" id="t2J-ss-kIX"/>
+                            <constraint firstItem="sij-Uk-Pzm" firstAttribute="leading" secondItem="l31-5g-1Sw" secondAttribute="leading" constant="38" id="wgB-M9-ofW"/>
+                            <constraint firstItem="WN2-MA-4C4" firstAttribute="top" secondItem="l31-5g-1Sw" secondAttribute="top" constant="180" id="ynh-Dl-VH4"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Card" id="YYc-eV-KKY"/>
+                    <connections>
+                        <outlet property="cardImageView" destination="VGR-Ft-X3d" id="gAf-5F-iXh"/>
+                        <outlet property="creditCardNumberLabel" destination="062-lY-m20" id="AOG-ge-b4B"/>
+                        <outlet property="expirationLabel" destination="tI9-w4-qsN" id="Lcx-hv-7NW"/>
+                        <outlet property="flagImageView" destination="WN2-MA-4C4" id="brX-uh-qO5"/>
+                        <outlet property="nameLabel" destination="Flh-S0-vTX" id="NTX-km-Li7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="afq-RG-WIv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1769.5652173913045" y="87.723214285714278"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="NZ1-jz-t2c">
@@ -59,6 +155,8 @@
         </scene>
     </scenes>
     <resources>
+        <image name="fundo-master" width="700" height="490"/>
+        <image name="mastercard" width="185" height="152"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
