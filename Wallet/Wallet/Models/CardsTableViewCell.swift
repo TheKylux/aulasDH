@@ -33,7 +33,11 @@ class CardsTableViewCell: UITableViewCell {
         
         self.card = value;
         self.nameLabel.text = value.name;
-        self.numberLabel.text = String(value.creditCardNumber ?? 0);
+        let num0 = String(value.creditCardNumber ?? 0);
+        let num1 = num0.prefix(4);
+        var num2 = num0.suffix(12);
+        num2 = num2.prefix(4);
+        self.numberLabel.text = "\(num1) \(num2) **** ****";
         self.expirationLabel.text = value.expirationDate
         
         if value.flag == .mastercard {

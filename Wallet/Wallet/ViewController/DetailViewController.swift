@@ -26,7 +26,14 @@ class DetailViewController: UIViewController {
         super.viewDidLoad()
         
         self.nameLabel.text = selectedCard?.name;
-        self.creditCardNumberLabel.text = String(selectedCard?.creditCardNumber ?? 0);
+        //self.creditCardNumberLabel.text = String(selectedCard?.creditCardNumber ?? 0);
+        
+        let num0 = String(selectedCard?.creditCardNumber ?? 0);
+        let num1 = num0.prefix(4);
+        var num2 = num0.suffix(12);
+        num2 = num2.prefix(4);
+        self.creditCardNumberLabel.text = "\(num1) \(num2) **** ****";
+        
         self.expirationLabel.text = selectedCard?.expirationDate;
         
         if selectedCard?.flag == .mastercard {
