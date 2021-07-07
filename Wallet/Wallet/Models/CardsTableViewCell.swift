@@ -16,6 +16,8 @@ class CardsTableViewCell: UITableViewCell {
     @IBOutlet weak var companyImageView: UIImageView!
     
     
+    
+    
     private var card: Cards?;
 
     override func awakeFromNib() {
