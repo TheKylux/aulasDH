@@ -13,6 +13,14 @@
 		ABB0F78126A5EBA1009D65D4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ABB0F77F26A5EBA1009D65D4 /* Main.storyboard */; };
 		ABB0F78326A5EBA4009D65D4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ABB0F78226A5EBA4009D65D4 /* Assets.xcassets */; };
 		ABB0F78626A5EBA4009D65D4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ABB0F78426A5EBA4009D65D4 /* LaunchScreen.storyboard */; };
+		ABB0F78F26A5ECBD009D65D4 /* HorizontalTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABB0F78D26A5ECBD009D65D4 /* HorizontalTableViewCell.swift */; };
+		ABB0F79026A5ECBD009D65D4 /* HorizontalTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = ABB0F78E26A5ECBD009D65D4 /* HorizontalTableViewCell.xib */; };
+		ABB0F79326A5EE8D009D65D4 /* CicleCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABB0F79126A5EE8D009D65D4 /* CicleCollectionViewCell.swift */; };
+		ABB0F79426A5EE8D009D65D4 /* CicleCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = ABB0F79226A5EE8D009D65D4 /* CicleCollectionViewCell.xib */; };
+		ABB0F79626A5F25E009D65D4 /* Animal.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABB0F79526A5F25E009D65D4 /* Animal.swift */; };
+		ABCFB56326A775600022F306 /* CardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABCFB56126A775600022F306 /* CardTableViewCell.swift */; };
+		ABCFB56426A775600022F306 /* CardTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = ABCFB56226A775600022F306 /* CardTableViewCell.xib */; };
+		ABCFB56726A777480022F306 /* UIImageView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABCFB56626A777480022F306 /* UIImageView+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +32,14 @@
 		ABB0F78226A5EBA4009D65D4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ABB0F78526A5EBA4009D65D4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ABB0F78726A5EBA4009D65D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ABB0F78D26A5ECBD009D65D4 /* HorizontalTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizontalTableViewCell.swift; sourceTree = "<group>"; };
+		ABB0F78E26A5ECBD009D65D4 /* HorizontalTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HorizontalTableViewCell.xib; sourceTree = "<group>"; };
+		ABB0F79126A5EE8D009D65D4 /* CicleCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CicleCollectionViewCell.swift; sourceTree = "<group>"; };
+		ABB0F79226A5EE8D009D65D4 /* CicleCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CicleCollectionViewCell.xib; sourceTree = "<group>"; };
+		ABB0F79526A5F25E009D65D4 /* Animal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animal.swift; sourceTree = "<group>"; };
+		ABCFB56126A775600022F306 /* CardTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardTableViewCell.swift; sourceTree = "<group>"; };
+		ABCFB56226A775600022F306 /* CardTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CardTableViewCell.xib; sourceTree = "<group>"; };
+		ABCFB56626A777480022F306 /* UIImageView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +72,8 @@
 		ABB0F77826A5EBA1009D65D4 /* NewTimeline */ = {
 			isa = PBXGroup;
 			children = (
+				ABCFB56826A777600022F306 /* Utilities */,
+				ABCFB56526A775690022F306 /* Models */,
 				ABB0F77926A5EBA1009D65D4 /* AppDelegate.swift */,
 				ABB0F77B26A5EBA1009D65D4 /* SceneDelegate.swift */,
 				ABB0F77D26A5EBA1009D65D4 /* ViewController.swift */,
@@ -63,8 +81,30 @@
 				ABB0F78226A5EBA4009D65D4 /* Assets.xcassets */,
 				ABB0F78426A5EBA4009D65D4 /* LaunchScreen.storyboard */,
 				ABB0F78726A5EBA4009D65D4 /* Info.plist */,
+				ABB0F79526A5F25E009D65D4 /* Animal.swift */,
 			);
 			path = NewTimeline;
+			sourceTree = "<group>";
+		};
+		ABCFB56526A775690022F306 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				ABCFB56126A775600022F306 /* CardTableViewCell.swift */,
+				ABCFB56226A775600022F306 /* CardTableViewCell.xib */,
+				ABB0F78D26A5ECBD009D65D4 /* HorizontalTableViewCell.swift */,
+				ABB0F78E26A5ECBD009D65D4 /* HorizontalTableViewCell.xib */,
+				ABB0F79126A5EE8D009D65D4 /* CicleCollectionViewCell.swift */,
+				ABB0F79226A5EE8D009D65D4 /* CicleCollectionViewCell.xib */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		ABCFB56826A777600022F306 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				ABCFB56626A777480022F306 /* UIImageView+Extension.swift */,
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -124,9 +164,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ABB0F79426A5EE8D009D65D4 /* CicleCollectionViewCell.xib in Resources */,
 				ABB0F78626A5EBA4009D65D4 /* LaunchScreen.storyboard in Resources */,
+				ABB0F79026A5ECBD009D65D4 /* HorizontalTableViewCell.xib in Resources */,
 				ABB0F78326A5EBA4009D65D4 /* Assets.xcassets in Resources */,
 				ABB0F78126A5EBA1009D65D4 /* Main.storyboard in Resources */,
+				ABCFB56426A775600022F306 /* CardTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,8 +181,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				ABB0F77E26A5EBA1009D65D4 /* ViewController.swift in Sources */,
+				ABB0F79326A5EE8D009D65D4 /* CicleCollectionViewCell.swift in Sources */,
+				ABCFB56726A777480022F306 /* UIImageView+Extension.swift in Sources */,
+				ABB0F78F26A5ECBD009D65D4 /* HorizontalTableViewCell.swift in Sources */,
 				ABB0F77A26A5EBA1009D65D4 /* AppDelegate.swift in Sources */,
 				ABB0F77C26A5EBA1009D65D4 /* SceneDelegate.swift in Sources */,
+				ABB0F79626A5F25E009D65D4 /* Animal.swift in Sources */,
+				ABCFB56326A775600022F306 /* CardTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
