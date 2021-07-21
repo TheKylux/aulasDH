@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="PickerView" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Selecione um valor no Picker" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HED-sk-wNj">
+                                <rect key="frame" x="82" y="89" width="251" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fha-jb-HRW">
+                                <rect key="frame" x="0.0" y="496" width="414" height="216"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="414" id="36F-kj-Pwr"/>
+                                    <constraint firstAttribute="height" constant="216" id="sB3-96-fHt"/>
+                                </constraints>
+                            </pickerView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cjT-32-eCT">
+                                <rect key="frame" x="171" y="784" width="72" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="72" id="HXG-on-Oip"/>
+                                </constraints>
+                                <state key="normal" title="Selecionar"/>
+                                <connections>
+                                    <action selector="tappedSelectButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5cH-dd-2Ss"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="4aP-SG-Re0">
+                                <rect key="frame" x="23" y="160" width="368" height="328"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="328" id="cdf-Bo-7tl"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="cjT-32-eCT" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="01y-UU-pcL"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="cjT-32-eCT" secondAttribute="bottom" constant="48" id="54J-iE-dFU"/>
+                            <constraint firstItem="fha-jb-HRW" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="6vg-Oz-tLL"/>
+                            <constraint firstItem="4aP-SG-Re0" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="23" id="BSv-iL-c20"/>
+                            <constraint firstItem="4aP-SG-Re0" firstAttribute="centerX" secondItem="fha-jb-HRW" secondAttribute="centerX" id="CI2-ef-bfA"/>
+                            <constraint firstItem="4aP-SG-Re0" firstAttribute="top" secondItem="HED-sk-wNj" secondAttribute="bottom" constant="50" id="Z5x-FY-w5l"/>
+                            <constraint firstItem="fha-jb-HRW" firstAttribute="top" secondItem="4aP-SG-Re0" secondAttribute="bottom" constant="8" symbolic="YES" id="ang-oP-hxh"/>
+                            <constraint firstItem="cjT-32-eCT" firstAttribute="top" secondItem="fha-jb-HRW" secondAttribute="bottom" constant="72" id="cGi-wI-6Zh"/>
+                            <constraint firstItem="4aP-SG-Re0" firstAttribute="centerX" secondItem="HED-sk-wNj" secondAttribute="centerX" id="e8g-X1-aeD"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="cidadeImageView" destination="4aP-SG-Re0" id="LCP-Mh-Ivw"/>
+                        <outlet property="myPickerView" destination="fha-jb-HRW" id="U1q-dv-goa"/>
+                        <outlet property="titleLabel" destination="HED-sk-wNj" id="jUW-za-l1I"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="111.59420289855073" y="79.6875"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
