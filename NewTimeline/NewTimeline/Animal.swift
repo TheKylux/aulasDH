@@ -12,5 +12,6 @@ struct Animal {
     var nome:String;
     var comportamento:String;
     var imageName:String;
+    var imageNameBackground:String;
 
 }
