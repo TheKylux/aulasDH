@@ -17,21 +17,21 @@ class CarListViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.controller.delegate = self;
+        
         self.myTableView.register(UINib(nibName: "CustomTableViewCell", bundle: nil), forCellReuseIdentifier: "CustomTableViewCell");
         
-        self.controller.carregaCarros { success, error in
-            
-            if success {
-                self.myTableView.reloadData();
-            } else {
-                print(error);
-            }
-            
-        }
+//        self.controller.carregaCarros { success, error in
+//
+//            if success {
+//                self.myTableView.reloadData();
+//            } else {
+//                print(error);
+//            }
+//
+//        }
         
         
-        self.myTableView.delegate = self;
-        self.myTableView.dataSource = self;
         // Do any additional setup after loading the view.
     }
 
@@ -53,4 +53,18 @@ extension CarListViewController: UITableViewDelegate, UITableViewDataSource {
         
         return cell ?? UITableViewCell()
     }
+}
+
+extension CarListViewController: CarListControllerProtocol {
+    
+    func success() {
+        self.myTableView.delegate = self;
+        self.myTableView.dataSource = self;
+    }
+    
+    func failed() {
+        print("falhou");
+    }
+    
+    
 }
