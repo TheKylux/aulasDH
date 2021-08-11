@@ -7,9 +7,9 @@
 
 import Foundation
 
+private var arrayProdutos:[Product] = [Product(nome: "Bolacha", marca: "Teste", quantidade: 1), Product(nome: "Bolacha2", marca: "Teste2", quantidade: 12)];
+
 class ProdutoController {
-    
-    private var arrayProdutos:[Product] = [Product(nome: "Bolacha", marca: "Teste", quantidade: 1), Product(nome: "Bolacha2", marca: "Teste2", quantidade: 12)];
     
     var count:Int{
         return arrayProdutos.count;
@@ -21,13 +21,17 @@ class ProdutoController {
             if let _marca=marca {
                 if let _quantidade=quantidade {
                     let prod:Product = Product(nome: _nome, marca: _marca, quantidade: Int(_quantidade) ?? 0);
-                    self.arrayProdutos.append(prod);
+                    //self.arrayProdutos.append(prod);
+                    arrayProdutos += [prod];
+                    for value in arrayProdutos {
+                        print(value.nome);
+                    }
                 }
             }
         }
     }
     
     func loadCurrentProduct(indexPath: IndexPath) -> Product{
-        return self.arrayProdutos[indexPath.row];
+        return arrayProdutos[indexPath.row];
     }
 }
