@@ -13,6 +13,7 @@ class ViewController: UIViewController, ProdutoControllerProtocol {
     func atualizarTabela() {
         self.produtosTableView.reloadData();
     }
+    
     func cam() {
         print("okay");
         self.getImage(fromSourceType: .camera);
@@ -36,6 +37,8 @@ class ViewController: UIViewController, ProdutoControllerProtocol {
         
         self.produtosTableView.delegate = self;
         self.produtosTableView.dataSource = self;
+        
+        self.controller.delegate = self;
         
         
         self.produtosTableView.register(UINib(nibName: "ProdutoCustomTableViewCell", bundle: nil), forCellReuseIdentifier: "ProdutoCustomTableViewCell");
@@ -93,6 +96,7 @@ extension ViewController: UIImagePickerControllerDelegate, UINavigationControlle
             
         }
         self.dismiss(animated: true, completion: nil);
+        self.atualizarTabela();
         
     }
     

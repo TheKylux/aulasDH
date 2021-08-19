@@ -66,12 +66,14 @@ class ProdutoController {
         alert.addAction(UIAlertAction(title: "Tirar foto", style: .default, handler: { pic in
             print("cam");
             self.indexPathSecreto = indexPath;
+            self.delegate?.cam();
         }));
         
         //LibraryButton
         alert.addAction(UIAlertAction(title: "Escolher da biblioteca", style: .default, handler: { lib in
             print("lib");
             self.indexPathSecreto = indexPath;
+            self.delegate?.lib();
         }));
         
         //CancelButton
@@ -81,6 +83,7 @@ class ProdutoController {
         alert.addAction(UIAlertAction(title: "Remove", style: .destructive, handler: { del in
             print("del");
             produtoArray.remove(at: indexPath.row);
+            self.delegate?.atualizarTabela();
         }))
         
         return alert;
