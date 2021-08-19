@@ -26,6 +26,9 @@ class AdicionarProdutoView: UIViewController {
         
         self.informacoesView.roundCorners(cornerRadius: 15.0, typeCorners: [.inferiorDireito, .superiorDireito, .superiorEsquerdo, .inferiorEsquerdo]);
         
+        self.cancelarBtn.roundCorners(cornerRadius: 15.0, typeCorners: [.inferiorDireito, .inferiorEsquerdo, .superiorDireito, .superiorEsquerdo]);
+        self.salvarBtn.roundCorners(cornerRadius: 15.0, typeCorners: [.inferiorDireito, .inferiorEsquerdo, .superiorDireito, .superiorEsquerdo]);
+        
         // Do any additional setup after loading the view.
     }
     

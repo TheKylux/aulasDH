@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AB7E902A26C4B61800FD7E78 /* ListaDeComprasView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB7E902926C4B61800FD7E78 /* ListaDeComprasView.swift */; };
+		AB7E902C26C4B8AE00FD7E78 /* AdicionarProdutoListaDeComprasView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB7E902B26C4B8AE00FD7E78 /* AdicionarProdutoListaDeComprasView.swift */; };
 		AB8E7E9526C33A6D00E96614 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB8E7E9426C33A6D00E96614 /* AppDelegate.swift */; };
 		AB8E7E9726C33A6D00E96614 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB8E7E9626C33A6D00E96614 /* SceneDelegate.swift */; };
 		AB8E7E9926C33A6D00E96614 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB8E7E9826C33A6D00E96614 /* HomeView.swift */; };
@@ -23,6 +25,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AB7E902926C4B61800FD7E78 /* ListaDeComprasView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListaDeComprasView.swift; sourceTree = "<group>"; };
+		AB7E902B26C4B8AE00FD7E78 /* AdicionarProdutoListaDeComprasView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdicionarProdutoListaDeComprasView.swift; sourceTree = "<group>"; };
 		AB8E7E9126C33A6D00E96614 /* ShopList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShopList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB8E7E9426C33A6D00E96614 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AB8E7E9626C33A6D00E96614 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -98,6 +102,8 @@
 				AB8E7E9826C33A6D00E96614 /* HomeView.swift */,
 				AB8E7EB226C3433D00E96614 /* ProdutoView.swift */,
 				AB8E7EB826C3526100E96614 /* AdicionarProdutoView.swift */,
+				AB7E902926C4B61800FD7E78 /* ListaDeComprasView.swift */,
+				AB7E902B26C4B8AE00FD7E78 /* AdicionarProdutoListaDeComprasView.swift */,
 				AB8E7EAB26C33F0000E96614 /* Custom */,
 			);
 			path = View;
@@ -204,7 +210,9 @@
 				AB8E7EAE26C33F3C00E96614 /* ProductTableViewCell.swift in Sources */,
 				AB8E7EBE26C353DE00E96614 /* ExtensionUIView.swift in Sources */,
 				AB8E7EB126C341E300E96614 /* Product.swift in Sources */,
+				AB7E902A26C4B61800FD7E78 /* ListaDeComprasView.swift in Sources */,
 				AB8E7E9526C33A6D00E96614 /* AppDelegate.swift in Sources */,
+				AB7E902C26C4B8AE00FD7E78 /* AdicionarProdutoListaDeComprasView.swift in Sources */,
 				AB8E7EB326C3433D00E96614 /* ProdutoView.swift in Sources */,
 				AB8E7E9726C33A6D00E96614 /* SceneDelegate.swift in Sources */,
 				AB8E7EB926C3526100E96614 /* AdicionarProdutoView.swift in Sources */,
