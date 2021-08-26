@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AB21C98726D749250031724B /* MemeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB21C98626D749250031724B /* MemeViewController.swift */; };
 		AB5054DC26D5C8FB001E7F03 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB5054DB26D5C8FB001E7F03 /* AppDelegate.swift */; };
 		AB5054DE26D5C8FB001E7F03 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB5054DD26D5C8FB001E7F03 /* SceneDelegate.swift */; };
 		AB5054E026D5C8FB001E7F03 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB5054DF26D5C8FB001E7F03 /* ViewController.swift */; };
@@ -21,6 +22,7 @@
 		55168A4C5DE780DF1065824E /* Pods-NetworkingAPP.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NetworkingAPP.release.xcconfig"; path = "Target Support Files/Pods-NetworkingAPP/Pods-NetworkingAPP.release.xcconfig"; sourceTree = "<group>"; };
 		8F700C3D65F9B9EACD93F186 /* Pods-NetworkingAPP.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NetworkingAPP.debug.xcconfig"; path = "Target Support Files/Pods-NetworkingAPP/Pods-NetworkingAPP.debug.xcconfig"; sourceTree = "<group>"; };
 		91F7D1D03168D8A2E0A0387E /* Pods_NetworkingAPP.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NetworkingAPP.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AB21C98626D749250031724B /* MemeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemeViewController.swift; sourceTree = "<group>"; };
 		AB5054D826D5C8FB001E7F03 /* NetworkingAPP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NetworkingAPP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB5054DB26D5C8FB001E7F03 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AB5054DD26D5C8FB001E7F03 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -81,6 +83,7 @@
 				AB5054E426D5C8FE001E7F03 /* Assets.xcassets */,
 				AB5054E626D5C8FE001E7F03 /* LaunchScreen.storyboard */,
 				AB5054E926D5C8FE001E7F03 /* Info.plist */,
+				AB21C98626D749250031724B /* MemeViewController.swift */,
 			);
 			path = NetworkingAPP;
 			sourceTree = "<group>";
@@ -209,6 +212,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AB5054E026D5C8FB001E7F03 /* ViewController.swift in Sources */,
+				AB21C98726D749250031724B /* MemeViewController.swift in Sources */,
 				AB5054F026D5CD02001E7F03 /* Memes.swift in Sources */,
 				AB5054DC26D5C8FB001E7F03 /* AppDelegate.swift in Sources */,
 				AB5054DE26D5C8FB001E7F03 /* SceneDelegate.swift in Sources */,
