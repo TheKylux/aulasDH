@@ -15,6 +15,9 @@
 		AB5054E526D5C8FE001E7F03 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB5054E426D5C8FE001E7F03 /* Assets.xcassets */; };
 		AB5054E826D5C8FE001E7F03 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB5054E626D5C8FE001E7F03 /* LaunchScreen.storyboard */; };
 		AB5054F026D5CD02001E7F03 /* Memes.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB5054EF26D5CD02001E7F03 /* Memes.swift */; };
+		AB825E1926D8517C00E69E21 /* Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB825E1826D8517C00E69E21 /* Controller.swift */; };
+		AB825E1C26D851A200E69E21 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB825E1A26D851A200E69E21 /* CustomTableViewCell.swift */; };
+		AB825E1D26D851A200E69E21 /* CustomTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB825E1B26D851A200E69E21 /* CustomTableViewCell.xib */; };
 		E31C5F2B7825C834F4E0F053 /* Pods_NetworkingAPP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91F7D1D03168D8A2E0A0387E /* Pods_NetworkingAPP.framework */; };
 /* End PBXBuildFile section */
 
@@ -32,6 +35,9 @@
 		AB5054E726D5C8FE001E7F03 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AB5054E926D5C8FE001E7F03 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AB5054EF26D5CD02001E7F03 /* Memes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Memes.swift; sourceTree = "<group>"; };
+		AB825E1826D8517C00E69E21 /* Controller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Controller.swift; sourceTree = "<group>"; };
+		AB825E1A26D851A200E69E21 /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
+		AB825E1B26D851A200E69E21 /* CustomTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,17 +81,52 @@
 		AB5054DA26D5C8FB001E7F03 /* NetworkingAPP */ = {
 			isa = PBXGroup;
 			children = (
-				AB5054EF26D5CD02001E7F03 /* Memes.swift */,
+				AB825E1626D8513900E69E21 /* Model */,
+				AB825E1526D8513500E69E21 /* View */,
+				AB825E1426D8512F00E69E21 /* Controller */,
 				AB5054DB26D5C8FB001E7F03 /* AppDelegate.swift */,
 				AB5054DD26D5C8FB001E7F03 /* SceneDelegate.swift */,
-				AB5054DF26D5C8FB001E7F03 /* ViewController.swift */,
 				AB5054E126D5C8FB001E7F03 /* Main.storyboard */,
 				AB5054E426D5C8FE001E7F03 /* Assets.xcassets */,
 				AB5054E626D5C8FE001E7F03 /* LaunchScreen.storyboard */,
 				AB5054E926D5C8FE001E7F03 /* Info.plist */,
-				AB21C98626D749250031724B /* MemeViewController.swift */,
 			);
 			path = NetworkingAPP;
+			sourceTree = "<group>";
+		};
+		AB825E1426D8512F00E69E21 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				AB825E1826D8517C00E69E21 /* Controller.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		AB825E1526D8513500E69E21 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				AB5054DF26D5C8FB001E7F03 /* ViewController.swift */,
+				AB21C98626D749250031724B /* MemeViewController.swift */,
+				AB825E1726D8515800E69E21 /* Custom */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		AB825E1626D8513900E69E21 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				AB5054EF26D5CD02001E7F03 /* Memes.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		AB825E1726D8515800E69E21 /* Custom */ = {
+			isa = PBXGroup;
+			children = (
+				AB825E1A26D851A200E69E21 /* CustomTableViewCell.swift */,
+				AB825E1B26D851A200E69E21 /* CustomTableViewCell.xib */,
+			);
+			path = Custom;
 			sourceTree = "<group>";
 		};
 		DF12E5CB5C62B6FFA5F68064 /* Pods */ = {
@@ -158,6 +199,7 @@
 			files = (
 				AB5054E826D5C8FE001E7F03 /* LaunchScreen.storyboard in Resources */,
 				AB5054E526D5C8FE001E7F03 /* Assets.xcassets in Resources */,
+				AB825E1D26D851A200E69E21 /* CustomTableViewCell.xib in Resources */,
 				AB5054E326D5C8FB001E7F03 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -214,6 +256,8 @@
 				AB5054E026D5C8FB001E7F03 /* ViewController.swift in Sources */,
 				AB21C98726D749250031724B /* MemeViewController.swift in Sources */,
 				AB5054F026D5CD02001E7F03 /* Memes.swift in Sources */,
+				AB825E1C26D851A200E69E21 /* CustomTableViewCell.swift in Sources */,
+				AB825E1926D8517C00E69E21 /* Controller.swift in Sources */,
 				AB5054DC26D5C8FB001E7F03 /* AppDelegate.swift in Sources */,
 				AB5054DE26D5C8FB001E7F03 /* SceneDelegate.swift in Sources */,
 			);

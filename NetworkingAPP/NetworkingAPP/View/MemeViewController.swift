@@ -17,22 +17,26 @@ class MemeViewController: UIViewController {
     
     var selectMeme : Meme?;
     
+    private let controller = Controller();
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        setUp(meme: selectMeme ?? Meme(id: "", name: "", url: "", width: 0, height: 0, boxCount: 0));
         
-        // Do any additional setup after loading the view.
+        
+        setUpViewMeme(meme: selectMeme ?? Meme(id: "", name: "", url: "", width: 0, height: 0, boxCount: 0), imageMeme: controller.returnImage(qualquer: controller.returnIndicador()));
+        
     }
     
-    
-    func setUp (meme:Meme) {
-        guard let imageURL = URL(string: meme.url) else { return }
-        memeImageView.af.setImage(withURL: imageURL);
+    func setUpViewMeme (meme:Meme, imageMeme:UIImageView) {
+//        guard let imageURL = URL(string: meme.url) else { return }
+//        memeImageView.af.setImage(withURL: imageURL);
+        memeImageView.image = imageMeme.image;
         memeIdLabel.text = meme.id;
         memeNameLabel.text = meme.name;
     }
+    
     
 
 }
