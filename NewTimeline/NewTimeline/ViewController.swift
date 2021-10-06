@@ -1,0 +1,50 @@
+//
+//  ViewController.swift
+//  NewTimeline
+//
+//  Created by Vitor Lentos on 19/07/21.
+//
+
+import UIKit
+
+class ViewController: UIViewController {
+    
+    //MARK:- Outlets
+    @IBOutlet weak var timeLineTableView: UITableView!
+    
+    //MARK:- Var
+    private var arrayAnimais:[Animal] = [];
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        // Do any additional setup after loading the view.
+        
+        self.arrayAnimais = [Animal(nome: "", comportamento: "", imageName: "animal1", imageNameBackground: "plano1"), Animal(nome: "", comportamento: "", imageName: "animal2", imageNameBackground: "plano2"), Animal(nome: "", comportamento: "", imageName: "animal3", imageNameBackground: "plano3"), Animal(nome: "", comportamento: "", imageName: "animal4", imageNameBackground: "plano4"), Animal(nome: "", comportamento: "", imageName: "animal5", imageNameBackground: "plano5"), Animal(nome: "", comportamento: "", imageName: "animal6", imageNameBackground: "plano6"), Animal(nome: "", comportamento: "", imageName: "animal7", imageNameBackground: "plano7"), Animal(nome: "", comportamento: "", imageName: "animal8", imageNameBackground: "plano8"), Animal(nome: "", comportamento: "", imageName: "animal9", imageNameBackground: "plano9"), Animal(nome: "", comportamento: "", imageName: "animal10", imageNameBackground: "plano10"), Animal(nome: "", comportamento: "", imageName: "animal11", imageNameBackground: "plano11"), Animal(nome: "", comportamento: "", imageName: "animal12", imageNameBackground: "plano12"), Animal(nome: "", comportamento: "", imageName: "animal13", imageNameBackground: "plano13"), Animal(nome: "", comportamento: "", imageName: "animal14", imageNameBackground: "plano14"), Animal(nome: "", comportamento: "", imageName: "animal15", imageNameBackground: "plano15"), Animal(nome: "", comportamento: "", imageName: "animal16", imageNameBackground: "plano16"), Animal(nome: "", comportamento: "", imageName: "animal17", imageNameBackground: "plano17"), Animal(nome: "", comportamento: "", imageName: "animal18", imageNameBackground: "plano18") ];
+        
+        
+        self.timeLineTableView.register(UINib(nibName: "HorizontalTableViewCell", bundle: nil), forCellReuseIdentifier: "HorizontalTableViewCell");
+        self.timeLineTableView.dataSource = self;
+        self.timeLineTableView.delegate = self;
+        
+    }
+
+
+}
+
+extension ViewController: UITableViewDelegate, UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return self.arrayAnimais.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        let cell:HorizontalTableViewCell? = tableView.dequeueReusableCell(withIdentifier: "HorizontalTableViewCell", for: indexPath) as? HorizontalTableViewCell;
+        
+        cell?.setup(value: arrayAnimais);
+        
+        return cell ?? UITableViewCell();
+        
+    }
+    
+    
+}

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Jrf-Ti-fjA">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Tela1 View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="Tela1ViewController" customModule="Navigation" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H0S-oK-sLi">
+                                <rect key="frame" x="131" y="140" width="152" height="47"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="29"/>
+                                <state key="normal" title="Próxima tela">
+                                    <color key="titleColor" red="0.81565374140000002" green="0.87409663199999998" blue="0.90096873040000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="tappedProximaTelaButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NrV-nJ-rzf"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemIndigoColor"/>
+                        <constraints>
+                            <constraint firstItem="H0S-oK-sLi" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="52" id="I8N-ig-Hvt"/>
+                            <constraint firstItem="H0S-oK-sLi" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="xv3-Au-KrR"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="HY3-ft-NuJ"/>
+                    <connections>
+                        <segue destination="J77-yg-J5H" kind="show" identifier="Tela2ViewController" id="5IO-zv-ZSR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1002.8985507246377" y="88.392857142857139"/>
+        </scene>
+        <!--Tela2 View Controller-->
+        <scene sceneID="miX-Po-P1h">
+            <objects>
+                <viewController id="J77-yg-J5H" customClass="Tela2ViewController" customModule="Navigation" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="wyf-Rj-lBk">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Feq-Yu-QbZ">
+                                <rect key="frame" x="163.5" y="769" width="87" height="47"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="29"/>
+                                <state key="normal" title="...voltar">
+                                    <color key="titleColor" red="0.81565374140000002" green="0.87409663199999998" blue="0.90096873040000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="tappedVoltarButton:" destination="J77-yg-J5H" eventType="touchUpInside" id="QCl-LD-avT"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="qcK-Wq-Q1L"/>
+                        <color key="backgroundColor" systemColor="systemPinkColor"/>
+                        <constraints>
+                            <constraint firstItem="Feq-Yu-QbZ" firstAttribute="centerX" secondItem="wyf-Rj-lBk" secondAttribute="centerX" id="KNg-Jx-BIn"/>
+                            <constraint firstItem="qcK-Wq-Q1L" firstAttribute="bottom" secondItem="Feq-Yu-QbZ" secondAttribute="bottom" constant="46" id="iGn-bX-WzQ"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="waQ-VS-pyi"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zMx-Gk-xHL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1862" y="88"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="e6u-bJ-1Wd">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Jrf-Ti-fjA" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="9ni-n7-kmD">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="leq-TS-ts5"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="53h-Rn-WWh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="92.753623188405811" y="88.392857142857139"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemIndigoColor">
+            <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemPinkColor">
+            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
