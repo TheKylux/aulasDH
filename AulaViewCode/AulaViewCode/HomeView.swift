@@ -7,6 +7,7 @@
 
 import Foundation
 import UIKit
+import Utils
 
 class HomeView: UIView {
     
@@ -78,12 +79,24 @@ extension HomeView: ViewCode {
     }
     
     func addConstrains() {
-        containerStack.translatesAutoresizingMaskIntoConstraints = false
         
-        containerStack.topAnchor.constraint(equalTo: topAnchor).isActive = true
-        containerStack.bottomAnchor.constraint(equalTo: bottomAnchor).isActive = true
-        containerStack.trailingAnchor.constraint(equalTo: trailingAnchor).isActive = true
-        containerStack.leadingAnchor.constraint(equalTo: leadingAnchor).isActive = true
+        containerStack.fillSuperview()
+        
+//        containerStack.anchor(top: topAnchor,
+//                              leading: leadingAnchor,
+//                              bottom: bottomAnchor,
+//                              trailing: trailingAnchor,
+//                              padding: UIEdgeInsets(top: 0,
+//                                                    left: 0,
+//                                                    bottom: 0,
+//                                                    right: 0))
+        
+//        containerStack.translatesAutoresizingMaskIntoConstraints = false
+//
+//        containerStack.topAnchor.constraint(equalTo: topAnchor).isActive = true
+//        containerStack.bottomAnchor.constraint(equalTo: bottomAnchor).isActive = true
+//        containerStack.trailingAnchor.constraint(equalTo: trailingAnchor).isActive = true
+//        containerStack.leadingAnchor.constraint(equalTo: leadingAnchor).isActive = true
         
         groupStack.heightAnchor.constraint(equalTo: heightAnchor, multiplier: 0.5).isActive = true
     }

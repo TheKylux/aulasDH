@@ -10,6 +10,7 @@ import UIKit
 class ViewController: UIViewController {
     
     let homeView = HomeView(title: "Digital Fucking House")
+    let loginView = LoginView()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -78,7 +79,7 @@ class ViewController: UIViewController {
     }
     
     override func loadView() {
-        view = homeView
+        view = loginView
     }
 
 
